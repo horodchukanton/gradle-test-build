@@ -32,7 +32,7 @@ class TestTask extends DefaultTask {
     @TaskAction
     void doConfiguredTask() {
         if (configuredSleepTime) {
-            Thread.sleep(Long.valueOf((String) configuredSleepTime))
+            Thread.sleep(Long.valueOf((String) configuredSleepTime) * 1000)
         }
 
         if (configuredFailMessage) {
