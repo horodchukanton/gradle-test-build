@@ -50,5 +50,5 @@ $ gradle build -PsleepTime=5 -PfailMessage="Are we there yet?"
 
 ##### Show message after specified amount of time:
 <pre>
-$ gradle build -PsleepTime=10 testMessage="Finally I am here"
+$ gradle build -PsleepTime=10 -ptestMessage="Finally I am here"
 </pre>
