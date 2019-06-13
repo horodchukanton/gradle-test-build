@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                gradle build -PtestMessage="Build in the release/message branch"
+                sh "gradle build -PtestMessage=\"Build in the release/message branch\""
             }
         }
         stage('Test'){
