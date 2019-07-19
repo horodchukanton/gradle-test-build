@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh "gradle build -PtestMessage=\"Build in the master branch\""
+                sh "./gradlew build -PtestMessage=\"Build in the master branch\""
                 archiveArtifacts artifacts: 'build/libs/*.jar'
             }
         }
