@@ -1,0 +1,14 @@
+
+name: Jenkins
+on:
+- push
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: Jenkins
+      uses: jglick/serverless-jenkins@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
