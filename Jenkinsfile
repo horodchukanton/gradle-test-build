@@ -1,7 +1,5 @@
-pipeline {
-    agent any
+node {
 
-    stages {
         stage('Build') {
             steps {
                 sh "./gradlew build -PtestMessage=\"Build in the master branch\""
@@ -18,5 +16,5 @@ pipeline {
                 echo 'Deploy step'
             }
         }
-    }
+
 }
