@@ -1,3 +1,5 @@
+[![Jenkins](https://github.com/horodchukanton/gradle-test-build/actions/workflows/jenkins.yml/badge.svg)](https://github.com/horodchukanton/gradle-test-build/actions/workflows/jenkins.yml)
+
 Gradle configurable project
 ===========================
 
